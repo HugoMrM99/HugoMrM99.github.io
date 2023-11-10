@@ -2606,7 +2606,7 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   color: #fff;
   background-color: rgba(25, 135, 84, 0.9);
-  border-radius: 0.375rem;
+  border-radius: 6px;
 }
 
 .was-validated :valid ~ .valid-feedback,
@@ -11043,4 +11043,35 @@ ol.custom-list li, ol.custom-list li span, ol.custom-list li a {
   width: 80%; /* Use either width or height to maintain aspect ratio */
   /* height: auto; Uncomment if you want to control the height instead */
   /* Remove height to maintain the aspect ratio */
+}
+
+/* Tooltip class */
+.my-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.my-tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  background-color: lightgrey;
+  color: black;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0.5rem;
+  border-radius: 6px;
+  
+  /* Position the tooltip text - see examples below! */
+  bottom: 100%;
+  left: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.my-tooltip:hover .tooltiptext {
+  visibility: visible;
 }
